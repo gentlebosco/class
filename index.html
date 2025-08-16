@@ -5,27 +5,27 @@
     <style>
         body {
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif
         }
 
         table {
-            margin: 20px auto;
+            margin: 8px auto;
             border-collapse: collapse;
         }
 
         th, td {
-            border: 1px solid gray;
-            padding: 10px;
+            border: 1px solid black;
+            padding: 1px;
             text-align: center;
         }
 
         /* Table 1 Styling */
         .timetable th {
-            background-color: #ffffff;
+            background-color: white;
         }
 
         .timetable td {
-            background-color: #f9f9f9;
+            background-color: white;
         }
 
         .timetable .break {
@@ -35,27 +35,18 @@
 
         /* Table 2 Styling */
         .letters td {
-            width: 10px;
-            height: 10px;
-            font-weight: bold;
-            text-align: large;
-            vertical-align: middle;
+            font-weight: bolder;
+            font-style: normal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 2.5px solid rgba(15, 15, 205, 0.908);
+            font-size: 20px;
+            width: 1px;
+            height: 30px;
+            padding: 5px;
+            
         }
 
-        .letters .A { color: black; }
-        .letters .B { color: orange; }
-        .letters .C { color: gray; }
-        .letters .D { color: blue; }
-        .letters .E { color: green; }
-        .letters .F { color: black; }
-        .letters .G { color: purple; }
-        .letters .H { color: green; }
-        .letters .I { color: orange; }
-        .letters .J { color: red; }
-        .letters .K { color: blue; }
-        .letters .L { color: red; }
-        .letters .M { color: gray; }
-
+        
         /* Table 3 Styling */
         .info-table img {
             width: 40px;
@@ -64,7 +55,15 @@
         }
 
         .info-table th {
-            background-color: #eee;
+            background-color: white;
+        }
+        .th, td{
+            padding: 1px;
+            border: 1px solid black;
+            width: 1px;
+            height: 1px;
+            
+
         }
     </style>
 </head>
@@ -122,29 +121,29 @@
     <h2>table 2</h2>
     <table class="letters">
         <tr>
-            <td rowspan="2" style="border: 2px solid pink;">A</td>
-            <td class="B" style="color: aqua; border: 2px solid pink;">B</td>
-            <td rowspan="3">D</td>
+            <td rowspan="2" style="color: black;">A</td>
+            <td style="color:orange">B</td>
+            <td style="color:blue;" rowspan="3">D</td>
  
-            <td colspan="2">E</td>
-            <td class="F">F</td>
+            <td colspan="2" style="color: green;">E</td>
+            <td class="F" style="color: black;">F</td>
         </tr>
         <tr>
-            <td class="C">C</td>
-            <td rowspan="2">G</td>
-            <td rowspan="2">H</td>
-            <td rowspan="2">I</td>
+            <td class="C" style="color: pink;">C</td>
+            <td rowspan="2" style="color: gray;">G</td>
+            <td rowspan="2" style="color: green;">H</td>
+            <td rowspan="2" style="color: orange;">I</td>
         </tr>
         <tr>
-            <td colspan="2">J</td>
+            <td colspan="2" style="color: red;">J</td>
             <!-- <td class="G">G</td>
             <td class="H">H</td>
             <td class="I">I</td> -->
         </tr>
         <tr>
-            <td colspan="3">K</td>
-            <td class="L">L</td>
-            <td colspan="2">M</td>
+            <td colspan="3" style="color: blue;">K</td>
+            <td class="L" style="color: red;">L</td>
+            <td colspan="2" style="color: black;">M</td>
         </tr>
     </table>
 
