@@ -1,23 +1,204 @@
 <!DOCTYPE html>
+<html>
 <head>
-   <title>PERIODIC TABLE</title> 
-   <style>
-    body {
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    table{
-        margin: 8px;
-        border-collapse: collapse;
-        margin-left: auto;
-        margin-right: auto;
+    <title>HTML Table Exercises</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        table {
+            margin: 8px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 1px;
+            text-align: center;
+        }
+
+        /* Table 1 Styling */
+        .timetable th {
+            background-color: white;
+        }
+
+        .timetable td {
+            background-color: white;
+        }
+
+        .timetable .break {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        /* Table 2 Styling */
+        .letters td {
+            font-weight: bolder;
+            font-style: normal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 2.5px solid rgba(15, 15, 205, 0.908);
+            font-size: 20px;
+            width: 1px;
+            height: 30px;
+            padding: 5px;
+            
+        }
+
         
-    }
-    
-   </style>
+        /* Table 3 Styling */
+        .info-table img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .info-table th {
+            background-color: white;
+        }
+        .th, td{
+            padding: 1px;
+            border: 1px solid black;
+            width: 1px;
+            height: 1px;
+        }
+
+    </style>
 </head>
 <body>
-    <h3>VERBUM NETWORK PERIODIC TABLE</h3>
+
+    <h1>HTML TABLE EXERCISES</h1>
+
+    <!-- Table 1 -->
+    <h2>table 1</h2>
+    <table class="timetable">
+        <tr>
+            <th colspan="6">TIME TABLE</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>mon</th>
+            <th>tues</th>
+            <th>wed</th>
+            <th>Thrus</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="break">Lunch Break</td>
+        </tr>
+        <tr>
+            <td>History</td>
+            <td>Geography</td>
+            <td>Art</td>
+            <td>Maths</td>
+            <td rowspan="2">History</td>
+        </tr>
+        <tr>
+            <td>History</td>
+            <td>Geography</td>
+            <td>Art</td>
+            <td>Science</td>
+        </tr>
+    </table>
+
+    <!-- Table 2 -->
+    <h2>table 2</h2>
+    <table class="letters">
+        <tr>
+            <td rowspan="2" style="color: black;">A</td>
+            <td style="color:orange">B</td>
+            <td style="color:blue;" rowspan="3">D</td>
+ 
+            <td colspan="2" style="color: green;">E</td>
+            <td class="F" style="color: black;">F</td>
+        </tr>
+        <tr>
+            <td class="C" style="color: pink;">C</td>
+            <td rowspan="2" style="color: gray;">G</td>
+            <td rowspan="2" style="color: green;">H</td>
+            <td rowspan="2" style="color: orange;">I</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="color: red;">J</td>
+            
+        </tr>
+        <tr>
+            <td colspan="3" style="color: blue;">K</td>
+            <td class="L" style="color: red;">L</td>
+            <td colspan="2" style="color: black;">M</td>
+        </tr>
+    </table>
+
+    <!-- Table 3 -->
+    <h2>table3</h2>
+    <table class="info-table">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>STATE</th>
+            <th>IMAGE</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>mazi okuefuna</td>
+            <td>example@gmail.com</td>
+            <td>kano</td>
+            <td><img src="a8.webp" alt="User" /></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>obidike afamefuna</td>
+            <td>example@gmail.com</td>
+            <td>adamawa</td>
+            <td><img src="a8.webp" alt="User" /></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ikechukwu francis</td>
+            <td>example@gmail.com</td>
+            <td>anambra</td>
+            <td><img src="a8.webp" alt="a lady" width="40" height="40">
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>johnbosco ifesinachi</td>
+            <td>example@gmail.com</td>
+            <td>ebonyi</td>
+            <td><img src="a8.webp" alt="cat" width="40" height="40" style="border-radius: 50%;" /></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Josephine amarachi</td>
+            <td>example@gmail.com</td>
+            <td>kaduna</td>
+            <td><img src="a8.webp" alt="User" /></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>benedict chukwuebuka</td>
+            <td>example@gmail.com</td>
+            <td>enugu</td>
+            <td><img src="a8.webp" alt="User" /></td>
+        </tr>
+    </table>
+       <h3>VERBUM NETWORK PERIODIC TABLE</h3>
      <!-- my periodic table 1 -->
     <table border="1">
 <tr>
@@ -212,5 +393,6 @@
         </tr>
 
     </table>
+
 </body>
 </html>
